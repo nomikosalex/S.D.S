@@ -82,9 +82,9 @@ export default function PrivacyPage() {
               <div className="space-y-4">
                 <p>Επεξεργαζόμαστε τα δεδομένα σας βάσει των ακόλουθων νομικών θεμελίων (Άρθρο 6 ΓΚΠΔ):</p>
                 <ul className="list-disc pl-5 space-y-2">
-                  <li><strong className="text-white">Έννομο συμφέρον (Άρθρο 6 παρ. 1 στ')</strong>: απάντηση σε επικοινωνία και διαχείριση επαγγελματικών σχέσεων.</li>
-                  <li><strong className="text-white">Εκτέλεση σύμβασης (Άρθρο 6 παρ. 1 β')</strong>: παροχή των υπηρεσιών που έχετε ζητήσει.</li>
-                  <li><strong className="text-white">Συναίνεση (Άρθρο 6 παρ. 1 α')</strong>: για ενημερωτικές επικοινωνίες εάν το έχετε αποδεχθεί ρητά.</li>
+                  <li><strong className="text-white">Έννομο συμφέρον (Άρθρο 6 παρ. 1 στ&apos;)</strong>: απάντηση σε επικοινωνία και διαχείριση επαγγελματικών σχέσεων.</li>
+                  <li><strong className="text-white">Εκτέλεση σύμβασης (Άρθρο 6 παρ. 1 β&apos;)</strong>: παροχή των υπηρεσιών που έχετε ζητήσει.</li>
+                  <li><strong className="text-white">Συναίνεση (Άρθρο 6 παρ. 1 α&apos;)</strong>: για ενημερωτικές επικοινωνίες εάν το έχετε αποδεχθεί ρητά.</li>
                 </ul>
               </div>
             ) : (
