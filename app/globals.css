@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg:   #060b14;
+  --color-neon: #00d4ff;
+}
+
+/* Lenis manages smooth scroll — disable native smooth scroll */
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: #f8fafc;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Thin branded scrollbar */
+::-webkit-scrollbar       { width: 3px; }
+::-webkit-scrollbar-track { background: var(--color-bg); }
+::-webkit-scrollbar-thumb { background: var(--color-neon); border-radius: 2px; opacity: 0.5; }
+
+/* Prevent content shifting on scroll */
+* {
+  box-sizing: border-box;
+}
+
+/* Scroll indicator bob — CSS animation keeps it off the JS thread */
+@keyframes scrollBob {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(10px); }
+}
+
+/* Logo carousel — pure CSS keeps it fully on the compositor */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* Contact sent-state fade-in */
+@keyframes fadeScaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
